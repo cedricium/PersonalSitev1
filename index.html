@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Cedric Amaya's Portfolio Page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://use.fontawesome.com/b41a1edfeb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Trirong:400,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
-    <body>
-        <h1>Hello, and welcome to my webpage.</h1>
-        <p>Here you will find my portfolio of webpages I have created, as well as contact information in order to get in touch. Enjoy!</p>
-    </body>
-
+<script>
+  $(document).ready(function() {
+    $("#home").addClass("animated shake");
+  });
+</script>
+    
+    
+    
 </head>
+
+<body id="page-top" class="body" style="background-color: #e6e9e9">
+
+<!-- NAVBAR -->
+<ul class="topnav navbar-fixed-top">
+  <li><a href="#">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+<SCRIPT SRC="jquery.js">
+</SCRIPT>
+    <!-- KEEP EVERYTHING BELOW JUST IN CASE LOL
+
+<nav class="navbar navbar-fixed-top navbar-default">
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+    -->
+    <div class="container text-center" id="wrapper">   
+<!-- Header Section -->
+        <header>
+        <div class="container-fluid title">
+            <h1 style="font-family: 'Bungee Shade'; font-size: 84px">WELCOME</h1>
+        </div>
+        </header>
+<!-- About Me Section -->        
+        <div id="about" class="container-fluid box">
+            <h2 style="font-family: Trirong; font-size: 60px">ABOUT ME</h2>
+            <div class="container-fluid" style="clear: left;">
+                <!--<img class="portrait-border portrait" src="img/portrait.jpg">-->
+                <p style="float: left"><img src="img/portrait.jpg" class="portrait-border"></p>
+                <p class="content" style="font-family: Raleway; font-size: 20px;">Hello! My name is Cedric Amaya and I am a self-taught web developer from California. I am currently working on the Front End Development Certificate through freeCodeCamp. I am studying for an Associate in Sciece for Transfer (AS-T) degree in Computer Science.
+                <br><br> When I am not studying or working, I enjoy cultivating my creativity by sketching or using watercolors. I also love to go on hikes with my girlfriend on the weekends.</p>
+            </div>
+        </div>
+<!-- Project Section -->   
+        <div id="projects" class="container-fluid box">
+        <h2 style="font-family: Trirong; font-size: 60px">PROJECTS</h2>
+            <div class="row content">
+                <div class="col-lg-4">
+                    <a href="http://codepen.io/cedricium/full/Vagbxg/" class="thumbnail">
+                        <img src="img/GKcapture.jpg" alt="...">
+                        <p>Gustav Klimt Tribute Page</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:void(0)" class="thumbnail">
+                        <img src="img/MfPAcapture.JPG" alt="...">
+                        <p>The official Martin from Palo Alto website.</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:void(0)" class="thumbnail">
+                        <img src="http://www.allenrandolph.com/wp-content/uploads/2015/03/EDL-pix-work-in-progress.gif" alt="...">
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- Contact Section -->        
+        <div id="contact" class="container end-box">
+            <h2 style="font-family: Trirong; font-size: 60px">CONTACT</h2>
+            <p class="content" style="font-family: Raleway; font-size: 20px;">
+                Find me on the following:</p>
+            <div class="row content">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://github.com/cedricium" class="btn btn-default btn-lg"><i class="fa fa-github-square fa-fw"></i> <span class="network-name">GitHub</span></a>
+                        </li>
+                        <li>
+                            <a href="    https://www.linkedin.com/in/cedric-amaya-15352210a" class="btn btn-info btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <p id="email" style="font-family: Raleway; font-size: 20px;">
+                For comments, concerns, or business inquiries, email me at:</p>
+            <br>
+            <a href="mailto:amaya.cedric@gmail.com"><p style="font-family: Raleway; font-size: 20px;">
+                amaya.cedric@gmail.com</p>
+            </a>
+        </div>       
+    </div>
+    <p class="footer">&#169; 2016 - designed and coded by Cedric Amaya</p>
+</body>
 </html>
