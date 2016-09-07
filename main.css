@@ -77,7 +77,7 @@ img {
 #about {
     height: 100%;
     width: 100%;
-    margin: 0 auto;
+    margin: 0% auto 10% auto;
     position: relative;
     top: 600px;
 }
