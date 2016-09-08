@@ -10,11 +10,13 @@ p {
 
 body {
     margin: 0 auto;
-    background-color: #2a2829 !important;
+    background-color: #1f0068   !important;
 }
 
 .container {
     background-color: transparent;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 #landing {
@@ -26,17 +28,17 @@ body {
 #landing h2 {
     position: absolute;
     top: 50%;
-    left: 18%;
-    margin-right: 18%;
+    left: 25%;
+    margin-right: 25%;
     text-align: center;
     transform: translate(0, -50%);
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #portfolio {
-    height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 img {
@@ -46,17 +48,14 @@ img {
 
 .wrap {
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .tint {
   position: relative;
   float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
   cursor: pointer;
-  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
 
 .tint:before {
@@ -70,16 +69,15 @@ img {
   transition: all .3s linear;
 }
 
-.tint:hover:before { background: rgba(10,0,0, 0.5); }
+.tint:hover:before { background: rgba(31,0,104, 0.6); }
 
-.t1:before { background: rgba(0,0,0, 0.8); }
+.t1:before { background: rgba(16,0,53, 0.8); }
 
 #about {
-    height: 100%;
     width: 100%;
-    margin: 0% auto 10% auto;
+    margin-bottom: 10%;
     position: relative;
-    top: 600px;
+    top: 50px;
 }
 
 #about div h4 {
@@ -94,7 +92,7 @@ img {
 
 #about h4 a:hover {
     text-decoration: underline;
-    color: pink;
+    color: #569CE3;
 }
 
 .section1 {
@@ -120,14 +118,14 @@ img {
 }
 
 .section1 button:hover {
-    color: pink;
-    border-color: pink;
+    color: #569CE3;
+    border-color: #569CE3;
     cursor: pointer;
 }
 
 .section1 p {
-    font-size: 1.8em;
-    font-family: 'Times-New-Roman', serif;
+    font-size: 1.6em;
+    font-family: 'Unna', serif;
 }
 
 .section2 {
@@ -138,8 +136,8 @@ img {
 }
 
 .section2 p {
-    font-size: 1.3em;
-    font-family: 'Times-New-Roman', serif;
+    font-size: 1.2em;
+    font-family: 'Unna', serif;
 }
 
 .section3 {
@@ -149,20 +147,57 @@ img {
     float: left;
 }
 
-.section3 p {
-    font-size: 1.1em;
-    font-family: 'Times-New-Roman', serif;
+.header-margin {
+    margin-bottom: -2%;
 }
 
-@media screen and (max-width: 768px) {
+.section3 p {
+    font-size: 1.2em;
+    font-family: 'Unna', serif;
+}
+
+#footer {
+    width: 70%;
+    height: 0%;
+    margin: 10% 15% 5% 15%;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: rgba(16,0,53,0.8);
+}
+
+#footer p {
+    text-align: center;
+    color: rgba(16,0,53,0.8);
+    font-size: 0.9em;
+    display: inline;
+    vertical-align: top;
+}
+
+#bold {
+    font-weight: 600;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 980px) {
     #about {
         position: static;
+        margin: 10% auto;
     }
     .section1 { 
         float: none;
         margin-right: 5%;
         width: auto;
   }
+    .section1 p {
+        font-size: 1.4em;
+    }
     .section2 {
         float: none;
         margin: 15% 5% 0% 5%;
@@ -172,5 +207,8 @@ img {
         float: none;
         margin: 15% 5% 15% 5%;
         width: auto;
+    }
+    #footer {
+        margin-bottom: 10%;
     }
 }
