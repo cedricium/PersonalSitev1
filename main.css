@@ -162,12 +162,12 @@ img {
     margin: 10% 15% 5% 15%;
     border-top-style: solid;
     border-top-width: thin;
-    border-top-color: rgba(16,0,53,0.8);
+    border-top-color: rgba(125,125,125,0.8);
 }
 
 #footer p {
     text-align: center;
-    color: rgba(16,0,53,0.8);
+    color: rgba(125,125,125,0.8);
     font-size: 0.9em;
     display: inline;
     vertical-align: top;
