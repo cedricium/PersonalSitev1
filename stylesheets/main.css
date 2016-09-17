@@ -1,44 +1,145 @@
-h1,
-h2,
-h3,
-h4,
-p {
-    color: #fafafa;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 300;
-}
-
 body {
     margin: 0 auto;
-    background-color: #1f0068   !important;
+    background-color: #fafafa;
 }
 
-.container {
-    background-color: transparent;
-    margin: 0 auto;
-    overflow: hidden;
-}
+
+
+/*
+ *    #          #    #     # ######  ### #     #  #####  
+ *    #         # #   ##    # #     #  #  ##    # #     # 
+ *    #        #   #  # #   # #     #  #  # #   # #       
+ *    #       #     # #  #  # #     #  #  #  #  # #  #### 
+ *    #       ####### #   # # #     #  #  #   # # #     # 
+ *    #       #     # #    ## #     #  #  #    ## #     # 
+ *    ####### #     # #     # ######  ### #     #  #####  
+ */
 
 #landing {
+    color: #2A2829;
     height: 100%;
-    width: 100%;
     position: relative;
 }
 
-#landing h2 {
+#landing span {
     position: absolute;
-    top: 50%;
-    left: 25%;
-    margin-right: 25%;
-    text-align: center;
-    transform: translate(0, -50%);
-    text-transform: uppercase;
-    font-size: 1em;
+    bottom: 10%;
+    right: 10%;
 }
 
-#portfolio {
-    width: 100%;
+#landing h1 {
+    font-size: 36px;
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+}
+
+#light {
+    font-weight: 100;
+    margin-right: 2px;
+}
+
+#bold {
+    font-weight: 600;
+}
+
+
+
+
+/***
+ *    #     #    #    #     # ######     #    ######  
+ *    ##    #   # #   #     # #     #   # #   #     # 
+ *    # #   #  #   #  #     # #     #  #   #  #     # 
+ *    #  #  # #     # #     # ######  #     # ######  
+ *    #   # # #######  #   #  #     # ####### #   #   
+ *    #    ## #     #   # #   #     # #     # #    #  
+ *    #     # #     #    #    ######  #     # #     # 
+ */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    width: 15%;
+    list-style-type: none;
     overflow: hidden;
+    position: fixed;
+    top: 5%;
+    z-index: 100;
+}
+
+nav li {
+    font-family: 'Heebo', sans-serif;
+}
+
+nav li a {
+    display: block;
+    color: #2A2829;
+    text-align: center;
+    padding: 18px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li a:hover {
+    background-color: #2A2829;
+    color: #fafafa;
+    text-decoration: underline;
+}
+
+
+
+/*
+ *       #    ######  ####### #     # ####### 
+ *      # #   #     # #     # #     #    #    
+ *     #   #  #     # #     # #     #    #    
+ *    #     # ######  #     # #     #    #    
+ *    ####### #     # #     # #     #    #    
+ *    #     # #     # #     # #     #    #    
+ *    #     # ######  #######  #####     #    
+ */
+#about {
+    margin: 0% 3% 10% 20%;
+    padding-top: 5%;
+}
+
+#about h1 {
+    font-family: 'Heebo', serif;
+    font-weight: 100;
+    font-size: 34px;
+}
+
+#about h1 a {
+    color: #2A2829;
+    text-decoration: none;
+    border-bottom: dotted thin #2A2829;
+}
+
+#about h1 a:hover {
+    border-bottom: solid thin #2A2829;
+}
+
+#about h3 {
+    font-family: 'Heebo', serif;
+    font-weight: 100;
+}
+
+
+
+/*
+ *    #     # ####### ######  #    #  #####  
+ *    #  #  # #     # #     # #   #  #     # 
+ *    #  #  # #     # #     # #  #   #       
+ *    #  #  # #     # ######  ###     #####  
+ *    #  #  # #     # #   #   #  #         # 
+ *    #  #  # #     # #    #  #   #  #     # 
+ *     ## ##  ####### #     # #    #  #####  
+ */
+
+#works {
+    overflow: hidden;
+    margin: 0% 0% 10% 20%;
 }
 
 img {
@@ -69,146 +170,165 @@ img {
   transition: all .3s linear;
 }
 
-.tint:hover:before { background: rgba(31,0,104, 0.6); }
+.tint:hover:before { background: rgba(0, 0, 0, 0); }
 
-.t1:before { background: rgba(16,0,53, 0.8); }
+.t1:before { background: rgba(42,40,41, 1.0); }
 
-#about {
+
+
+
+/*
+ *     #####  ####### #     # #######    #     #####  ####### 
+ *    #     # #     # ##    #    #      # #   #     #    #    
+ *    #       #     # # #   #    #     #   #  #          #    
+ *    #       #     # #  #  #    #    #     # #          #    
+ *    #       #     # #   # #    #    ####### #          #    
+ *    #     # #     # #    ##    #    #     # #     #    #    
+ *     #####  ####### #     #    #    #     #  #####     #    
+ */
+
+#contact {
+    margin: 0%;
+    padding: 0% 0% 2% 0%;
+    text-align: center;
+    overflow: hidden;
+    color: #fafafa;
+    background-color: #2A2829;
+    z-index: 1;
+}
+
+#container {
     width: 100%;
-    margin-bottom: 10%;
+    height: auto;
+    text-align: left;
     position: relative;
-    top: 50px;
 }
 
-#about div h4 {
-    font-size: 1em;
-    text-transform: uppercase;
-}
-
-#about h4 a {
-    text-decoration: underline;
-    color: #fafafa;
-}
-
-#about h4 a:hover {
-    text-decoration: underline;
-    color: #569CE3;
-}
-
-.section1 {
-    width: 40%;
-    margin: 5% 2% 5% 5%;
+#info {
     display: block;
-    float: left
+    float: left;
+    margin: 2% 10% 0% 20%;
 }
 
-.section1 button {
-    background-color: transparent;
-    color: #fafafa;
-    padding: 0.8em 1em;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1em;
+#social {
+    display: block;
+    float: left;
+    margin: 2% 0% 0% 0%;
+}
+
+#contact h2, h5 {
     font-family: 'Heebo', sans-serif;
-    font-weight: 300;
-    border-style: solid;
-    border-width: thin;
-    border-color: #fafafa;
+    font-weight: 100;
 }
 
-.section1 button:hover {
-    color: #569CE3;
-    border-color: #569CE3;
-    cursor: pointer;
+#contact h2 a {
+    text-decoration: none;
+    color: #fafafa;
 }
 
-.section1 p {
-    font-size: 1.6em;
-    font-family: 'Unna', serif;
-}
-
-.section2 {
-    width: 20%;
-    margin: 5% 2% 5% 5%;
-    display: block;
-    float: left;
-}
-
-.section2 p {
-    font-size: 1.2em;
-    font-family: 'Unna', serif;
-}
-
-.section3 {
-    width: 15%;
-    margin: 5%;
-    display: block;
-    float: left;
-}
-
-.header-margin {
-    margin-bottom: -2%;
-}
-
-.section3 p {
-    font-size: 1.2em;
-    font-family: 'Unna', serif;
-}
-
-#footer {
-    width: 70%;
-    height: 0%;
-    margin: 10% 15% 5% 15%;
-    border-top-style: solid;
-    border-top-width: thin;
-    border-top-color: rgba(125,125,125,0.8);
-}
-
-#footer p {
-    text-align: center;
-    color: rgba(125,125,125,0.8);
-    font-size: 0.9em;
-    display: inline;
-    vertical-align: top;
-}
-
-#bold {
-    font-weight: 600;
-}
-
-.center {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
+#contact h2 a:hover {
+    text-decoration: underline;
 }
 
 
-@media screen and (max-width: 980px) {
+#top {
+    font-size: 20px;
+    margin-right: 5%;
+    float: right;
+    padding: 0px 10px;
+}
+
+#top a {
+    color: #fafafa;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+@media screen and (max-width: 760px) {
+    
+/* NAV SECTION */    
+    nav ul {
+        list-style-type: none;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        height: 210px;
+    }
+
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        background-color: #111;
+    }
+    
+    
+/* ABOUT SECTION */    
     #about {
-        position: static;
-        margin: 10% auto;
+        margin: 15% 5%;
+        padding-top: 5%;
+        text-align: left;
     }
-    .section1 { 
+
+    #about h1 {
+        font-size: 30px;
+    }
+
+    #about h3 {
+        font-family: 'Heebo', serif;
+        font-weight: 100;
+    }
+    
+
+/* WORKS SECTION */    
+    #works {
+        overflow: hidden;
+        margin: 10% 0%;
+    }
+    
+    .t1:before { background: rgba(42,40,41, 0.9); }
+    
+    
+/* CONTACT SECTION */
+    #info {
         float: none;
-        margin-right: 5%;
-        width: auto;
-  }
-    .section1 p {
-        font-size: 1.4em;
+        margin: 5%;
     }
-    .section2 {
+
+    #social {
         float: none;
-        margin: 15% 5% 0% 5%;
-        width: auto;
+        margin: 10% 5% 5% 5%;
     }
-    .section3 {
+
+    #contact h2 a {
+        text-decoration: underline;
+    }
+    
+    
+/* TOP BUTTON */    
+    #top {
         float: none;
-        margin: 15% 5% 15% 5%;
-        width: auto;
+        margin: 5%;
     }
-    #footer {
-        margin-bottom: 10%;
+
+    #top a {
+        text-decoration: none;
+        padding: 2%;
+    }
+    
+    #top a:hover {
+        text-decoration: none;
     }
 }

@@ -2,85 +2,105 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Heebo:300,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="/stylesheets/main.css" type="text/css">
-        <title>Cedric Amaya</title>
-        <link rel="icon" href="/img/favicon.png">
+        <title>Cedric Amaya | Developer</title>
+        <link rel="icon" href="favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+                });
+            });
+        </script>
     </head>
-    
     <body>
-        <div class="container">
-            
-            
-            <div id="landing">
-                <h2>Cedric Amaya &nbsp | &nbsp Aspiring Software Engineer/Web Developer &nbsp | &nbsp Silicon Valley</h2>
-            </div>
-            
-            
-            <div id="portfolio">
-                <div class="wrap">
-                    <a href="http://codepen.io/cedricium/full/gwppQG/" target="_blank"><figure class="tint t1">
-                        <img src="/img/mfpaImg.PNG" alt="" />
-                        </figure></a>
-                </div>
-                <div class="wrap">
-                    <a href="http://codepen.io/cedricium/full/Vagbxg/" target="_blank"><figure class="tint t1">
-                        <img src="/img/tributePage.PNG" alt="" />
-                        </figure></a>
-                </div>
-            </div>
-            
-            
-            <div id="about">
-                <div class="section1">
-                    <h4>Bonsoir</h4>
-                    <p>Welcome, I'm Cedric. I am an aspiring Software Engineer with a passion for minimalism and sleek design. I am currently studying Computer Science, and if I'm not studying or working, I'm probably programming for fun or making websites for friends, listening to music, and eating not-so-healthy food.
-                    
-                    <br />
-                    <br />
-                        
-                    Based in the heart of Silicon Valley, CA.</p>
-                    <a href="mailto:amaya.cedric@gmail.com"><button>Lets Get In Touch</button></a>
-                </div>
-                <div class="section2">
-                    <h4>Skills</h4>
-                    <p>C, C++, Shell Scripting
-                        
-                    <br />
-                    <br />
-                        
-                        HTML, CSS, JavaScript
-                        
-                    <br />
-                    <br />
-                        
-                        UX/UI Design</p>
-                </div>
-                <div class="section3">
-                    <h4>Social Media</h4>
-                    <h4 style="font-size: 1em;" class="header-margin"><a href="http://www.github.com/cedricium" target="_blank">GitHub</a></h4>
-                        <p>Not much here now except tutorial programs, but check again soon.
-                        <br>
-                        <br>
-                        </p>
-                    <h4 style="font-size: 1em;" class="header-margin"><a href="https://www.linkedin.com/in/cedric-amaya-15352210a" target="_blank">LinkedIn</a></h4>
-                        <p>My professional profile - notice there's no technical work experience, you should change that.
-                        <br>
-                        <br>
-                        </p>
-                    <h4 style="font-size: 1em;" class="header-margin"><a href="http://www.twitter.com/cedricamaya" target="_blank">Twitter</a></h4>
-                        <p>I guess a lot of people have these nowadays.</p>
-                </div>
-            </div>
+        
+        
+        
+        <div id="landing">
+            <span>
+                <h1 id="light">Cedric</h1>
+                <h1 id="bold">Amaya</h1>
+            </span>
         </div>
         
-        <footer>
-            <div id="footer">
-                <span class="center">
-                    <p id="copyright">CEDRIC</p> <p id="bold">AMAYA</p><p>&nbsp; | &nbsp; 2016</p>
-                </span>
+        
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#landing" class="scroll">Home</a></li>
+                    <li><a href="#about" class="scroll">About</a></li>
+                    <li><a href="#works" class="scroll">Works</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        
+        <div id="about">
+            <h1 class="text">Welcome, I'm Cedric. I am an aspiring Software Engineer with a passion for minimalism and sleek design. <a href="mailto:amaya.cedric@gmail.com">Contact me</a> about your project.</h1>
+            <h3>
+                I am currently studying Computer Science, and if I'm not studying or working, I'm probably programming for fun or making websites for friends, listening to music, and eating not-so-healthy food.
+                
+                <br />
+                <br />
+                
+                My interest in web development started when I took a web design class my sophomore year in high school. Since then, I have been teaching myself how to create and code websites with the help of online resources such as freeCodeCamp and Colt Steele's "The Web Development Bootcamp" course. 
+            </h3>
+        </div>
+        
+        
+        
+        <div id="works">
+            <div class="wrap">
+                <a href="http://codepen.io/cedricium/full/gwppQG/" target="_blank">
+                    <figure class="tint t1">
+                        <img src="/img/mfpaImg.PNG" alt="" />
+                    </figure>
+                </a>
             </div>
-        </footer>
+            <div class="wrap">
+                <a href="http://codepen.io/cedricium/full/Vagbxg/" target="_blank">
+                    <figure class="tint t1">
+                        <img src="/img/tributePage.PNG" alt="" />
+                    </figure>
+                </a>
+            </div>
+        </div>
+                
+        
+        
+        <div id="contact">
+            <div id="container">
+                <div id="info">
+                    <h5>CONTACT</h5>
+                    <h2>Email: <a href="mailto:amaya.cedric@gmail.com">amaya.cedric@gmail.com</a></h2>
+                    <h2>Phone: <a href="tel:+4806204702">+1 (480) 620-4702</a></h2>
+                    <br />
+                    <h2>Silicon Valley, CA</h2>
+                </div>
+
+                <div id="social">
+                    <h5>SOCIAL</h5>
+                    <h2><a href="https://www.linkedin.com/in/cedric-amaya-15352210a" target="_blank">LinkedIn</a></h2>
+                    <h2><a href="http://github.com/cedricium" target="_blank">GitHub</a></h2>
+                    <h2><a href="http://freecodecamp.com/cedricium" target="_blank">freeCodeCamp</a></h2>
+                </div>
+            </div>
+            
+            <div id="top">
+                <p><a href="#landing" class="scroll">&uarr;</a></p>
+            </div>
+            
+        </div> 
+        
+        
         
     </body>
 </html>
