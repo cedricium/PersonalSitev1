@@ -4,5 +4,5 @@
 <br />
 <br />
 <br />
-Cedric <b>Amaya</b>
+CEDRIC <b>AMAYA</b>
 </h1>
