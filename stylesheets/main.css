@@ -140,6 +140,7 @@ nav li a:hover {
 #works {
     overflow: hidden;
     margin: 0% 0% 10% 20%;
+    color: #2A2829;
 }
 
 img {
@@ -177,6 +178,68 @@ img {
 
 .t1:before { background: rgba(42,40,41, 1.0); }
 
+#works h2 {
+    font-family: 'Heebo', serif;
+    float: left;
+}
+
+#h2 {
+    float: right;
+    margin-right: 5%;
+}
+
+#works h2 a {
+    color: #2A2829;
+    text-decoration: none;
+    border-bottom: dotted thin #2A2829;
+}
+
+#works h2 a:hover {
+    border-bottom: solid thin #2A2829;
+}
+
+#clearfix {
+    clear: both;
+}
+
+#works h4 {
+    font-family: 'Heebo', serif;
+}
+
+#light {
+    font-weight: 100;
+    display: inline;
+    margin-right: 4px;
+}
+
+#bold {
+    font-weight: 600;
+    display: inline;
+}
+
+#span-info {
+    text-align: center;
+    width: 80%;
+    margin-left: 15%;
+    float: left;
+    padding: 1% 0%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #2A2829;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+h3 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+}
+
+#div-text {
+    width: 90%;
+    margin: 0 auto 15% auto;
+    text-align: right;
+}
 
 
 
@@ -247,6 +310,8 @@ img {
     padding: 2px 10px;
 }
 
+
+
 @media screen and (max-width: 760px) {
     
 /* NAV SECTION */    
@@ -301,8 +366,29 @@ img {
         margin: 10% 0%;
     }
     
-    .t1:before { background: rgba(42,40,41, 0.9); }
+    .t1:before { 
+        background: rgba(42,40,41, 0.0); 
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
     
+    #works h2 {
+        font-size: 5vw;
+    }
+    
+    #span-info {
+        margin-left: 10%;
+    }
+
+    h3 {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
+    }
+
+    #div-text {
+        width: 90%;
+        margin: 0 auto 15% auto;
+        text-align: center;
+    }
     
 /* CONTACT SECTION */
     #info {
