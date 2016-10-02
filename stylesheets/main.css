@@ -35,9 +35,9 @@ body {
     float: left;
 }
 
-#light {
+.light {
     font-weight: 100;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 #bold {
