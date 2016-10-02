@@ -170,7 +170,10 @@ img {
   transition: all .3s linear;
 }
 
-.tint:hover:before { background: rgba(0, 0, 0, 0); }
+.tint:hover:before { 
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 
 .t1:before { background: rgba(42,40,41, 1.0); }
 
