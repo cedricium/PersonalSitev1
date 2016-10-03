@@ -375,6 +375,11 @@ h3 {
         font-size: 5vw;
     }
     
+    #h2 {
+        float: left;
+        margin-left: 7%;
+    }
+    
     #span-info {
         margin-left: 10%;
     }
@@ -385,9 +390,9 @@ h3 {
     }
 
     #div-text {
-        width: 90%;
+        width: 85%;
         margin: 0 auto 15% auto;
-        text-align: center;
+        text-align: left;
     }
     
 /* CONTACT SECTION */
