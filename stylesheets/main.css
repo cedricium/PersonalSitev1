@@ -60,12 +60,12 @@ body {
 nav ul {
     margin: 0;
     padding: 0;
-    height: 50%;
+    height: 60%;
     width: 15%;
     list-style-type: none;
     overflow: hidden;
     position: fixed;
-    top: 5%;
+    top: 0%;
     z-index: 100;
 }
 
@@ -323,7 +323,7 @@ h3 {
         width: 100%;
         position: absolute;
         top: 0%;
-        height: 210px;
+        height: 330px;
     }
 
     nav li {
